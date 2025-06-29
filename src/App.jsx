@@ -9,7 +9,7 @@ function App() {
           <Header />
         </div>
 
-        <img className="pattern" src="/pattern-lines.svg" alt="" />
+        {/* <img className="pattern" src="/pattern-lines.svg" alt="" />
         <img className="circle" src="/pattern-circle.svg" alt="" />
         <img className="circle-2" src="/pattern-circle.svg" alt="" />
         <img
@@ -17,7 +17,7 @@ function App() {
           src="/pattern-squiggly-line-top.svg"
           alt=""
         />
-        <img src="/pattern-squiggly-line-bottom-desktop.svg" alt="" />
+        <img src="/pattern-squiggly-line-bottom-desktop.svg" alt="" /> */}
       </section>
     </>
   );

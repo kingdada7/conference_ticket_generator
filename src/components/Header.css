@@ -1,15 +1,23 @@
 .header {
-  /* position: absolute;
-  top: 40px;
-  left: 600px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-align: center; */
+ display: flex;
+ gap: 10px;
+ justify-self: center;
+
+
 }
 
 h1{
-    color: white;
+    color:black;
 }
+ .title{
+    text-align: center;
+ }
 
+ .date{
+    text-align: center;
+ }
 
+.subtitle {
+    text-align: center;
+    color: gray;
+}

@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@ body {
   position: absolute;
   top: -100px;
   left: 30px;
-  /* z-index: 20; */
+  
 }
 .circle-2 {
   position: absolute;
@@ -28,4 +28,4 @@ body {
   position: absolute;
   right: 2px;
   top: 80px;
-}
+} */
