@@ -1,5 +1,7 @@
 import "./App.css";
+import Form from "./components/Form";
 import Header from "./components/Header";
+
 
 function App() {
   return (
@@ -7,6 +9,8 @@ function App() {
       <section className="App">
         <div className="header-container">
           <Header />
+          <Form />
+
         </div>
 
         {/* <img className="pattern" src="/pattern-lines.svg" alt="" />
