@@ -1,34 +1,39 @@
-import {useState, useCallback} from 'react';
-import "./Form.css"
+export default function Form() {
+  return (
+    <form className="flex flex-col items-center justify-center bg-gradient-to-br  text-white mt-100">
+      <div>
+        <label className="block mb-1 text-sm font-medium ">full name</label>
+        <input
+          type="text"
+          name="fullname"
+          className="w-[400px] h-[50px] px-4 text-white border border-white/30 rounded-lg focus:outline-none focus:ring-pink placeholder-white/40 mb-20 "
+          required
+        />
+      </div>
 
-function Form() {
-    const [error, setError] = useState("");
-    const [preview, setPreview] = useState(null);
+      <div>
+        <label className="block mb-1 text-sm font-medium">Email Name</label>
+        <input
+          type="email"
+          name="email"
+          className="w-[400px] h-[50px] px-4 text-white border border-white/30 rounded-lg focus:outline-none focus:ring-pink placeholder-white/40 mb-20"
+          required
+        />
+      </div>
 
-    const handleFile = useCallback((file) => {
-        const validTypes = ["image/jpeg", "image/png", "image/gif"];
-        if (!validTypes.includes(file.type)) {
-            setError("only jpeg, png, and gif files are allowed");
-            return;
-        }
-        if (file.size > 500 * 1024) {
-            setError("Maximum file size is 500KB");
-            return;
-        }
+      <div>
+        <label className="block mb-1 text-sm font-medium">GitHub</label>
+        <input
+          type="text"
+          name="GitHub"
+          className="w-[400px] h-[50px] px-4 text-white border border-white/30 rounded-lg focus:outline-none focus:ring-pink placeholder-white/40 mb-20"
+          required
+        />
+      </div>
 
-        setError("");
-        const reader = new FileReader();
-        reader.onload = () => setPreview(reader.result);
-        reader.readAsDataURL(file);
-
-    }, []);
-
-    return (
-        <>
-            
-            
-        </>
-    );
+      <button className="w-[400px] h-[50px] mt-4 py-3 bg-[#FF6A5E] text-black font-semibold rounded-xl transition hover:bg-[#ff513f]">
+        Generate my ticket
+      </button>
+    </form>
+  );
 }
-
-export default Form;

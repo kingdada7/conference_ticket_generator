@@ -1,30 +1,7 @@
-import "./App.css";
-import Form from "./components/Form";
-import Header from "./components/Header";
-
+import PageOne from "./pages/ticketgenrator/PageOne";
 
 function App() {
-  return (
-    <>
-      <section className="App">
-        <div className="header-container">
-          <Header />
-          <Form />
-
-        </div>
-
-        {/* <img className="pattern" src="/pattern-lines.svg" alt="" />
-        <img className="circle" src="/pattern-circle.svg" alt="" />
-        <img className="circle-2" src="/pattern-circle.svg" alt="" />
-        <img
-          className="squiggly-top"
-          src="/pattern-squiggly-line-top.svg"
-          alt=""
-        />
-        <img src="/pattern-squiggly-line-bottom-desktop.svg" alt="" /> */}
-      </section>
-    </>
-  );
+  return <PageOne />;
 }
 
 export default App;
