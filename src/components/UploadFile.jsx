@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function UploadFile() {
+ export default function UploadFile() {
   const [file, setFile] = useState(null);
 
   const handleFileChange = (event) => {
@@ -10,7 +10,7 @@ function UploadFile() {
     }
   };
   return (
-    <div className="relative">
+    <div className="relative z-20">
       <h2 className="text-lg text-white font-semibold pt-[40px] ml-139">
         Upload File
       </h2>
@@ -41,4 +41,4 @@ function UploadFile() {
     </div>
   );
 }
-export default UploadFile;
+

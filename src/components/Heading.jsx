@@ -1,6 +1,6 @@
 
-function Heading() {
-  return (
+ export default function Heading() {
+   return (
     <div className="text-center text-amber-50 pt-18">
       <img className="absolute left-150" src="/logo-mark.svg" alt="" />
       <h1 className="text-4xl font-semibold font-inconsolata">coding conf</h1>
@@ -17,4 +17,4 @@ function Heading() {
     </div>
   );
 }
-export default Heading;
+ 

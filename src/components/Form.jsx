@@ -1,8 +1,8 @@
 export default function Form() {
   return (
-    <form className="flex flex-col items-center justify-center bg-gradient-to-br  text-white mt-100">
+    <form className="relative z-20 flex flex-col items-center justify-center bg-gradient-to-br  text-white mt-80">
       <div>
-        <label className="block mb-1 text-sm font-medium ">full name</label>
+        <label className="block mb-1 text-sm font-medium">full name</label>
         <input
           type="text"
           name="fullname"
